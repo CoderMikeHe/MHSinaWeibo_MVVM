@@ -18,9 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // 创建window
         window = UIWindow(frame: UIScreen.main.bounds)
-        
+        window?.backgroundColor = UIColor.white
         // 设置window的根控制器
-        window?.rootViewController = MHTabBarController();
+        window?.rootViewController = MHTabBarController()
         
         // 显示window
         window?.makeKeyAndVisible()
@@ -52,4 +52,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
+
+
+/// 设置全局函数
+func MHLog <T>(message : T , file : String =  #file , funcName : String = #function , lineNum : Int = #line){
+    
+    // swift 没有宏定义
+    // 【build setting】-- 【other swift flag】 -- Dubug 添加 【-D DUBUG】即可
+    #if DEBUG
+        
+        let fileName = (file as NSString).lastPathComponent
+        print("❤️\(fileName):[\(funcName)]:(\(lineNum)) →→→ \(message)")
+        
+    #endif
+    
+}
+
 
