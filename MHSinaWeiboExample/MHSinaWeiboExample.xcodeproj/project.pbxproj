@@ -30,6 +30,7 @@
 		62013FD81E69C49900F6FE77 /* UIViewController+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 62013FCC1E69C49900F6FE77 /* UIViewController+CZAddition.m */; };
 		62013FDF1E6A4B9A00F6FE77 /* Bundle+MHExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62013FDE1E6A4B9A00F6FE77 /* Bundle+MHExtension.swift */; };
 		62013FEA1E6A53DE00F6FE77 /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = 62013FE91E6A53DE00F6FE77 /* main.json */; };
+		62F1ABDB1E6DC91D00E1763D /* UIBarButtonItem+MHExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F1ABDA1E6DC91D00E1763D /* UIBarButtonItem+MHExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		62013FCC1E69C49900F6FE77 /* UIViewController+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CZAddition.m"; sourceTree = "<group>"; };
 		62013FDE1E6A4B9A00F6FE77 /* Bundle+MHExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+MHExtension.swift"; sourceTree = "<group>"; };
 		62013FE91E6A53DE00F6FE77 /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
+		62F1ABDA1E6DC91D00E1763D /* UIBarButtonItem+MHExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+MHExtension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				62013FDE1E6A4B9A00F6FE77 /* Bundle+MHExtension.swift */,
+				62F1ABDA1E6DC91D00E1763D /* UIBarButtonItem+MHExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				62013FCF1E69C49900F6FE77 /* NSObject+CZRuntime.m in Sources */,
 				62013F821E699DBA00F6FE77 /* AppDelegate.swift in Sources */,
 				62013FA71E69A62000F6FE77 /* MHBaseViewController.swift in Sources */,
+				62F1ABDB1E6DC91D00E1763D /* UIBarButtonItem+MHExtension.swift in Sources */,
 				62013FD21E69C49900F6FE77 /* NSString+CZPath.m in Sources */,
 				62013FD71E69C49900F6FE77 /* UIView+CZAddition.m in Sources */,
 				62013FD11E69C49900F6FE77 /* NSString+CZHash.m in Sources */,

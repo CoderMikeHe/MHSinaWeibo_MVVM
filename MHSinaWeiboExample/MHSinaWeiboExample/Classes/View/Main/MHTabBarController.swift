@@ -4,11 +4,12 @@
 //
 //  Created by CoderMikeHe on 17/3/3.
 //  Copyright © 2017年 CoderMikeHe. All rights reserved.
-//
+//  微博主控制器
 
 import UIKit
 
 class MHTabBarController: UITabBarController {
+
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -41,7 +42,8 @@ class MHTabBarController: UITabBarController {
         composeButton.addTarget(self, action: #selector(composeBtnDidClicked), for: .touchUpInside)
         return composeButton
     }()
-    // 按钮的点击事件
+    
+    // 按钮的点击事件 事件的处理放在ViewDidLoad
     // private 能够保证方法私有，仅在当前对象被访问
     // @objc 允许这个函数在`运行时`通过 OC 的消息机制被调用！
     @objc private func composeBtnDidClicked(){
@@ -131,7 +133,7 @@ extension MHTabBarController{
             [NSFontAttributeName:UIFont.systemFont(ofSize: 12.0)],
             for: .normal)
         
-        // 设置导航栏的根控制器
+        // 设置导航栏的根控制器，实例化导航控制器的时候，会调用 push  方法将rootVC压栈
         let nav = MHNavigationController(rootViewController: vc)
         
         // 返回控制器
