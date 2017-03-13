@@ -10,7 +10,6 @@ import UIKit
 
 class MHTabBarController: UITabBarController {
 
-
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -29,8 +28,27 @@ class MHTabBarController: UITabBarController {
         
         /// 设置发布按钮 千万不要在viewDidLoad里面添加，否则会被系统的UITabBarButton覆盖
 //        setupComposeButton()
+        
+        
 
     }
+    
+    /**
+     portrait    : 竖屏，肖像
+     landscape   : 横屏，风景画
+     - 使用代码控制设备的方向，好处，可以在在需要横屏的时候，单独处理！
+     - 设置支持的方向之后，当前的控制器及子控制器都会遵守这个方向！
+     - 如果播放视频，通常是通过 modal 展现的！
+     */
+//    Swift 3.0以前的写法
+//    func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+//        return .portrait
+//    }
+    /// 重写计算型属性
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .portrait
+    }
+    
     
     /// 发布微博按钮
     lazy var composeButton : UIButton = {() -> UIButton in
